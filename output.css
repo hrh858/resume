@@ -2019,6 +2019,10 @@ video {
   font-weight: 700;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -2104,6 +2108,11 @@ video {
 .text-hrh-green {
   --tw-text-opacity: 1;
   color: rgb(106 167 96 / var(--tw-text-opacity));
+}
+
+.text-hrh-light-blue {
+  --tw-text-opacity: 1;
+  color: rgb(160 207 252 / var(--tw-text-opacity));
 }
 
 .text-hrh-muted {
