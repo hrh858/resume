@@ -819,6 +819,10 @@ video {
   display: none;
 }
 
+.w-1\/3 {
+  width: 33.333333%;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -1167,6 +1171,10 @@ video {
 
 .grid-flow-col-dense {
   grid-auto-flow: column dense;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2097,6 +2105,11 @@ video {
 .text-hrh-muted {
   --tw-text-opacity: 1;
   color: rgb(120 131 143 / var(--tw-text-opacity));
+}
+
+.text-hrh-white {
+  --tw-text-opacity: 1;
+  color: rgb(175 186 198 / var(--tw-text-opacity));
 }
 
 .text-white {
