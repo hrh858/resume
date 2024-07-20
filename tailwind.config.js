@@ -13,6 +13,7 @@ module.exports = {
         "hrh-white": "#afbac6",
         "hrh-muted": "#78838f",
         "hrh-green": "#6aa760",
+        "hrh-red": "#d06e61",
       },
     },
   },

@@ -16,22 +16,22 @@
 
 <body class="bg-hrh-bg font-JetBrainsMono text-hrh-white">
 	<div class="mx-auto my-6 max-w-screen-lg w-screen px-4">
-		<h1 class="text-3xl font-bold text-hrh-green">Jorge<span class="text-hrh-muted font-light">/* 호르헤 */</span>Gimenez
+		<h1 class="text-3xl font-bold text-hrh-green">Jorge Gimenez
 			Perez</h1>
+		<span class="text-hrh-muted font-light">/* 호르헤 */</span>
 		<p class="text-hrh-muted">Software Engineer</p>
-		<br />
-		<section id="general" class="grid grid-cols-3 py-6 border-b border-hrh-muted border-dashed">
-			<div class="flex flex-col">
-				<h1 class="font-bold text-hrh-dark-blue text-xl mb-4">Contact</h1>
+		<section id="general" class="sm:grid sm:grid-cols-3 py-6 border-b border-hrh-muted border-dashed">
+			<div class="flex flex-col sm:mb-0 mb-4">
+				<h1 class="font-bold text-hrh-dark-blue text-xl sm:mb-4">Contact</h1>
 				<p>+82 10-2181-0780</p>
 				<p>hrh858.99@gmail.com</p>
 			</div>
-			<div>
-				<h1 class="font-bold text-hrh-dark-blue text-xl mb-4">Location</h1>
+			<div class="flex flex-col sm:mb-0 mb-4">
+				<h1 class="font-bold text-hrh-dark-blue text-xl sm:mb-4">Location</h1>
 				<p>Seoul, South Korea</p>
 			</div>
-			<div class="flex flex-col">
-				<h1 class="font-bold text-hrh-dark-blue text-xl w-full mb-4">Residence Status</h1>
+			<div class="flex flex-col sm:mb-0 mb-4">
+				<h1 class="font-bold text-hrh-dark-blue text-xl w-full sm:mb-4">Residence Status</h1>
 				<p>Spanish Nationality</p>
 				<p>F-6 Visa - No sponsor required</p>
 			</div>
@@ -49,9 +49,9 @@
 				collaboration and enjoy learning from my coworkers, fostering an environment where we collectively strive
 				towards a shared goal.</p>
 		</section>
-		<section id="work-experience" class="py-6">
+		<section id="work-experience" class="border-b py-6 border-hrh-muted border-dashed">
 			<h1 class="text-xl text-hrh-dark-blue font-bold mb-4">Work Experience</h1>
-			<div id="work-experience-pwc" class="ml-2 mb-6">
+			<div id="work-experience-pwc" class="mb-6">
 				<h1 class="text-hrh-light-blue font-bold text-lg">Senior Software Engineer - Generative AI Team at PwC</h1>
 				<p class="font-light text-hrh-muted text-sm">September 2023 - Present ・ Seoul, South Korea</p>
 				<ul class="list-disc list-inside mt-4 ml-2">
@@ -62,11 +62,17 @@
 						development, NLP (Natural language Processing) pipelines development and document indexing systems.</li>
 				</ul>
 			</div>
-			<div id="work-experience-clinic" class="mb-6 ml-2">
+			<div id="work-experience-clinic" class="mb-6">
 				<h1 class="text-hrh-light-blue font-bold text-lg">Part-time Software Engineering Leader at Hospital Clínic de
 					Barcelona</h1>
 				<p class="font-light text-hrh-muted text-sm">September 2020 - Present ・ Barcelona, Spain (Remote)</p>
-				<ul class="list-disc list-inside mt-4 ml-2">
+				<p class="text-hrh-green mt-4 ml-2">Supervised, directed, and actively participated in the creation of a suite
+					of
+					four
+					tools designed for use by
+					hundreds of doctors at the hospital. My role encompassed the following responsibilities:
+				<p>
+				<ul class="list-disc list-inside ml-2">
 					<li>Conducted interviews with doctors to identify the specific needs that the applications were intended to
 						address.</li>
 					<li>Implemented the frontend components for all of the projects.</li>
@@ -79,7 +85,7 @@
 						practices, improving code readability, and ensuring the maintainability of the codebase.</li>
 				</ul>
 			</div>
-			<div id="work-experience-funnyworks" class="ml-2">
+			<div id="work-experience-funnyworks" class="mb-6">
 				<h1 class="text-hrh-light-blue font-bold text-lg">3D Web Apps Engineer & Backend Engineer at Funnyworks</h1>
 				<p class="font-light text-hrh-muted text-sm">April 2023 - September 2023 ・ Seoul, South Korea</p>
 				<ul class="list-disc list-inside mt-4 ml-2">
@@ -98,8 +104,96 @@
 						community belonging to a project managed by Shinsegae.</li>
 				</ul>
 			</div>
+			<div id="work-experience-onoma" class="mb-6">
+				<h1 class="text-hrh-light-blue font-bold text-lg">Engineering Team Leader at Onoma AI</h1>
+				<p class="font-light text-hrh-muted text-sm">April 2022 - April 2023 ・ Seoul, South Korea</p>
+				<p class="text-hrh-green mt-4 ml-2">I managed the engineering team responsible for developing two AI-powered
+					products
+					targeting designers and webtoon artists. These products leveraged generative AI to expedite the creative
+					process for professionals utilizing the tools. During this period, my responsibilities included:
+				</p>
+				<ul class="list-disc list-inside ml-2 mb-4">
+					<li>Making all decisions related to technology stack selection for the projects, managing infrastructure,
+						costs, and overseeing project timelines and planning.</li>
+					<li>Developing the non-AI components of the projects from scratch. This involved creating full-stack web
+						applications and web services to facilitate communication with the software developed by the AI team.</li>
+					<li>Analyzing, configuring, and allocating backend serverless infrastructure based on project size and
+						requirements over time.</li>
+					<li>Supervising the APIs developed by the AI team and conducting code reviews to enhance reusability,
+						maintainability, and readability.</li>
+					<li>Conducting interviews to identify suitable candidates who could accelerate project development.</li>
+					<li>Deploying the projects into production, implementing robust monitoring systems, and appropriately scaling
+						the backend infrastructure. Additionally, I continuously developed new features to enhance the products.
+					</li>
+				</ul>
+				<p class=" text-hrh-green ml-2">Developed a vector-search based service where users prompted the service with
+					natural
+					text inputs and the service provided them with either AI-generated images or retrieved them from a vector
+					database storing the previous generations.
+				<p>
+				<ul class="list-disc list-inside ml-2 mb-4">
+					<li>Managed and interacted with vector-based databases.</li>
+					<li>Interacted and designed the API of the generative AI service.</li>
+					<li>Designed and implemented the user facing API and web interface of the service.</li>
+				</ul>
+				<p class="text-hrh-green ml-2">During that time, I successfully led the team in delivering high-quality
+					solutions,
+					ensuring efficient deployment, and continuously improving the products to meet the evolving needs of the
+					target users.
+				<p>
+			</div>
+			<div id="work-experience-asdt" class="mb-6">
+				<h1 class="text-hrh-light-blue font-bold text-lg">Fullstack Software Engineer at ASDT Systems EU</h1>
+				<p class="font-light text-hrh-muted text-sm">January 2020 - January 2023 ・ Manresa, Spain (+Remote)</p>
+				<p class="text-hrh-red ml-2">// TODO
+				<p>
+			</div>
+			<div id="work-experience-theforest" class="mb-6">
+				<h1 class="text-hrh-light-blue font-bold text-lg">R&D Solutions Engineer at The Forest Next</h1>
+				<p class="font-light text-hrh-muted text-sm">January 2019 - January 2020 ・ Terrassa, Spain (Remote)</p>
+				<p class="text-hrh-red ml-2">// TODO
+				<p>
+			</div>
+			<div id="work-experience-pocketbi">
+				<h1 class="text-hrh-light-blue font-bold text-lg">Junior Data Analyst at PocketBI Cloud</h1>
+				<p class="font-light text-hrh-muted text-sm">January 2018 - January 2019 ・ Barcelona, Spain (Remote)</p>
+				<p class="text-hrh-red ml-2">// TODO
+				<p>
+			</div>
+		</section>
+		<section id="academic-background" class="border-b py-6 border-hrh-muted border-dashed">
+			<h1 class="text-xl text-hrh-dark-blue font-bold mb-4">Academic Background</h1>
+			<div id="academic-ku" class="mb-6">
+				<h1 class="text-hrh-light-blue font-bold text-lg">Bachelor's Degree in Computer Science</h1>
+				<p class="font-light text-hrh-muted text-sm">2021 - 2022 ・ 고려대학교 (Korea University) ・ Seoul, South Korea</p>
+				<p class="text-hrh-red ml-2">// TODO</p>
+			</div>
+			<div id="academic-uab">
+				<h1 class="text-hrh-light-blue font-bold text-lg">Bachelor's Degree in Computer Engineering</h1>
+				<p class="font-light text-hrh-muted text-sm">2018 - 2021 ・ Universitat Autònoma de Barcelona ・ Bellaterra, Spain
+				</p>
+				<p class="text-hrh-red ml-2">// TODO</p>
+			</div>
+		</section>
+		<section id="language-skills" class="py-6">
+			<h1 class="text-xl text-hrh-dark-blue font-bold mb-4">Language Skills</h1>
+			<div class="grid grid-cols-1 sm:grid-cols-3">
+				<div class="mb-4 sm:mb-0">
+					<h1 class="text-hrh-light-blue font-bold text-xl">Spanish</h1>
+					<p>Native Speaker</p>
+				</div>
+				<div class="mb-4 sm:mb-0">
+					<h1 class="text-hrh-light-blue font-bold text-xl">English</h1>
+					<p>Advanced <span class="text-hrh-muted font-light text-sm">IELTS 8.0 = C1</p>
+				</div>
+				<div>
+					<h1 class="text-hrh-light-blue font-bold text-xl">Korean</h1>
+					<p>Upper Intermmediate</p>
+				</div>
+			</div>
 		</section>
 	</div>
+
 </body>
 
 </html>

@@ -1202,8 +1202,8 @@ video {
   grid-auto-flow: column dense;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2165,6 +2165,11 @@ video {
   color: rgb(120 131 143 / var(--tw-text-opacity));
 }
 
+.text-hrh-red {
+  --tw-text-opacity: 1;
+  color: rgb(208 110 97 / var(--tw-text-opacity));
+}
+
 .text-hrh-white {
   --tw-text-opacity: 1;
   color: rgb(175 186 198 / var(--tw-text-opacity));
@@ -2600,6 +2605,22 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .sm\:grid {
+    display: grid;
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
