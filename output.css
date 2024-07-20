@@ -835,8 +835,12 @@ video {
   width: weird-and-invalid;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
+.w-screen {
+  width: 100vw;
+}
+
+.max-w-screen-lg {
+  max-width: 1024px;
 }
 
 .flex-shrink {
