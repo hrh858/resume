@@ -3,22 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./styles.css -o ./output.css",
-    "dev": "tailwindcss -i ./styles.css -o ./output.css --watch",
-    "serve": "live-server --port=3000",
-    "start": "npm-run-all --parallel dev serve"
+    "dev": "postcss ./styles.css -o dist/styles.css && open index.html",
+    "start": "open index.html",
+    "build": "postcss ./styles.css -o dist/styles.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "-": "^0.0.1",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.39"
-  },
   "devDependencies": {
-    "npm-run-all": "^4.1.5",
-    "tailwindcss": "^3.4.6"
+    "@tailwindcss/postcss": "^4.1.11",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.4.39",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.1.11"
   }
 }

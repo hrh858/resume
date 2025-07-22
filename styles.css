@@ -1,3 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-JetBrainsMono: "JetBrains Mono", "monospace";
+  /* ... */
+  --color-hrh-bg: #23272e;
+  --color-hrh-dark-blue: #79b6fb;
+  --color-hrh-light-blue: #a0cffc;
+  --color-hrh-white: #afbac6;
+  --color-hrh-muted: #78838f;
+  --color-hrh-green: #6aa760;
+  --color-hrh-red: #d06e61;
+}
