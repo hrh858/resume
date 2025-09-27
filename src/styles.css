@@ -18,14 +18,25 @@
   */
 
   /* Warm light theme experiment */
-  /* --color-hrh-bg: #fdfbf8; */
-  --color-hrh-bg: #ffffff;
+  --color-hrh-bg: #fdfbf8;
   --color-hrh-dark-blue: #1f1b19;
   --color-hrh-light-blue: #1f1b19;
   --color-hrh-white: #191714;
   --color-hrh-muted: #6c6761;
   --color-hrh-green: #f97316;
   --color-hrh-red: #d45d52;
+}
+
+@layer base {
+  :root[data-theme="dark"] {
+    --color-hrh-bg: #111827;
+    --color-hrh-dark-blue: #ffffff;
+    --color-hrh-light-blue: #ffffff;
+    --color-hrh-white: #e6edf4;
+    --color-hrh-muted: #94a3b8;
+    --color-hrh-green: #f97316;
+    --color-hrh-red: #d06e61;
+  }
 }
 
 @layer utilities {
@@ -41,12 +52,16 @@
     @apply flex flex-col sm:mb-0 mb-4;
   }
 
+  .info-column > a {
+    @apply text-hrh-green font-bold underline;
+  }
+
   .body-copy {
     @apply space-y-4 leading-relaxed;
   }
 
-  .info-column > a {
-    @apply text-hrh-green font-bold underline;
+  .theme-toggle {
+    @apply rounded-full px-3 py-1 mr-1 text-sm text-hrh-green transition-colors hover:bg-hrh-green hover:text-hrh-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hrh-green;
   }
 
   .entry-title {

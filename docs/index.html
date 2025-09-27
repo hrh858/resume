@@ -12,6 +12,25 @@
     <title>Jorge Froilan Gimenez Perez | Software Engineer Resume | 호르헤</title>
     <link rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍊</text></svg>">
+    <script>
+        (() => {
+            const root = document.documentElement;
+            const storageKey = 'theme';
+            const prefersDark = () => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            try {
+                const storedTheme = window.localStorage.getItem(storageKey);
+                if (storedTheme === 'dark' || storedTheme === 'light') {
+                    root.dataset.theme = storedTheme;
+                    return;
+                }
+            } catch (error) {
+                // localStorage might be unavailable; ignore and fall back to system preference.
+            }
+
+            root.dataset.theme = prefersDark() ? 'dark' : 'light';
+        })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
@@ -47,19 +66,27 @@
             ]
         }
     </script>
-  <script type="module" crossorigin src="/assets/index-CGmKGnZH.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-JxYe3E9i.css">
+  <script type="module" crossorigin src="/assets/index-BlIW9IRu.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DL-lXZIL.css">
 </head>
 
 <body class="bg-hrh-bg font-JetBrainsMono text-hrh-white">
 <div class="mx-auto my-6 max-w-screen-lg w-screen px-4">
-    <h1 class="text-3xl font-bold text-hrh-green">Jorge Froilan Gimenez
-        Perez 🍊</h1>
+    <div class="flex flex-row items-start justify-between">
+        <h1 class="text-3xl font-bold text-hrh-green">Jorge Froilan Gimenez
+            Perez 🍊</h1>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle color theme" aria-pressed="false">
+            <span class="inline sm:hidden" aria-hidden="true">🌙</span>
+            <span class="hidden sm:inline" data-theme-toggle-label>🌙 Dark mode</span>
+        </button>
+    </div>
     <span class="text-hrh-muted font-light">/* 호르헤 */</span>
     <p class="text-hrh-muted">Software Engineer</p>
-    <a class="underline" href="https://www.linkedin.com/in/jfgp">🔗LinkedIn</a> <span
-        class="text-hrh-dark-blue">&&</span> <a class="underline" href="https://www.instagram.com/naenuneuro/">📷Some
-    stills</a>
+    <div class="mt-2 flex flex-wrap items-center gap-3">
+        <a class="underline" href="https://www.linkedin.com/in/jfgp">🔗LinkedIn</a>
+        <span class="text-hrh-dark-blue">&amp;&amp;</span>
+        <a class="underline" href="https://www.instagram.com/naenuneuro/">📷Some stills</a>
+    </div>
     <section id="general" class="sm:grid sm:grid-cols-3 section-block">
         <div class="info-column">
             <h1 class="eyebrow-title sm:mb-4">Contact</h1>
