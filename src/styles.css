@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-JetBrainsMono: "JetBrains Mono", "monospace";
+  /* ... */
+  /*
+  Original palette
+  --color-hrh-bg: #23272e;
+  --color-hrh-dark-blue: #79b6fb;
+  --color-hrh-light-blue: #a0cffc;
+  --color-hrh-white: #afbac6;
+  --color-hrh-muted: #78838f;
+  --color-hrh-green: #6aa760;
+  --color-hrh-red: #d06e61;
+  */
+
+  /* Warm light theme experiment */
+  /* --color-hrh-bg: #fdfbf8; */
+  --color-hrh-bg: #ffffff;
+  --color-hrh-dark-blue: #1f1b19;
+  --color-hrh-light-blue: #1f1b19;
+  --color-hrh-white: #191714;
+  --color-hrh-muted: #6c6761;
+  --color-hrh-green: #f97316;
+  --color-hrh-red: #d45d52;
+}
+
+@layer utilities {
+  .section-block {
+    @apply border-b border-hrh-muted border-dashed py-6;
+  }
+
+  .eyebrow-title {
+    @apply font-bold text-xl text-hrh-green;
+  }
+
+  .info-column {
+    @apply flex flex-col sm:mb-0 mb-4;
+  }
+
+  .body-copy {
+    @apply space-y-4 leading-relaxed;
+  }
+
+  .info-column > a {
+    @apply text-hrh-green font-bold underline;
+  }
+
+  .entry-title {
+    @apply text-hrh-light-blue font-bold text-lg;
+  }
+
+  .entry-meta {
+    @apply font-light text-hrh-muted text-sm;
+  }
+
+  .tech-stack {
+    @apply flex flex-row flex-wrap gap-0;
+  }
+
+  .tech-stack > li {
+    @apply flex items-center text-sm;
+  }
+
+  .tech-stack > li:not(:last-child)::after {
+    content: "|";
+    display: inline-block;
+    @apply text-hrh-muted mx-2;
+  }
+}
