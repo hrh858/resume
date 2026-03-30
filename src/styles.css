@@ -68,6 +68,10 @@
     @apply text-hrh-light-blue font-bold text-lg;
   }
 
+  .company-highlight {
+    @apply text-hrh-green font-bold;
+  }
+
   .entry-meta {
     @apply font-light text-hrh-muted text-sm;
   }
