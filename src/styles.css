@@ -90,3 +90,40 @@
     @apply text-hrh-muted mx-2;
   }
 }
+
+@media print {
+  :root,
+  :root[data-theme="dark"] {
+    --color-hrh-bg: #fdfbf8;
+    --color-hrh-dark-blue: #1f1b19;
+    --color-hrh-light-blue: #1f1b19;
+    --color-hrh-white: #191714;
+    --color-hrh-muted: #6c6761;
+    --color-hrh-green: #f97316;
+    --color-hrh-red: #d45d52;
+  }
+
+  .theme-toggle,
+  [data-copy-email] {
+    display: none !important;
+  }
+
+  #skills,
+  #currently-learning,
+  #language-skills,
+  #work-experience > div,
+  #academic-background > div {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1.eyebrow-title {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
