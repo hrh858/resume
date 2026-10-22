@@ -94,7 +94,7 @@
 @media print {
   @page {
     size: A4;
-    margin: 9mm 11mm;
+    margin: 10mm 12mm;
   }
 
   :root,
@@ -109,12 +109,12 @@
   }
 
   html {
-    font-size: 9.5pt;
+    font-size: 10pt;
   }
 
   body {
-    font-size: 9.5pt;
-    line-height: 1.28;
+    font-size: 10pt;
+    line-height: 1.3;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
   }
@@ -145,62 +145,75 @@
   }
 
   .text-3xl {
-    font-size: 15pt;
-    line-height: 1.12;
+    font-size: 16pt;
+    line-height: 1.15;
   }
 
   .eyebrow-title {
-    font-size: 11pt;
-    line-height: 1.15;
+    font-size: 11.5pt;
+    line-height: 1.2;
+    margin-bottom: 3pt;
   }
 
   .entry-title,
   .text-lg {
-    font-size: 10pt;
-    line-height: 1.2;
+    font-size: 10.5pt;
+    line-height: 1.25;
+  }
+
+  .entry-title {
+    margin-bottom: 1pt;
   }
 
   .text-sm,
   .entry-meta,
   .tech-stack > li {
-    font-size: 8.5pt;
-    line-height: 1.25;
+    font-size: 9pt;
+    line-height: 1.3;
+  }
+
+  .entry-meta {
+    margin-bottom: 1.5pt;
+  }
+
+  .tech-stack {
+    margin-top: 2.5pt;
   }
 
   .text-xl {
-    font-size: 11pt;
+    font-size: 12pt;
   }
 
   .section-block,
   .py-6 {
-    padding-top: 4pt;
-    padding-bottom: 4pt;
+    padding-top: 4.5pt;
+    padding-bottom: 4.5pt;
   }
 
   .mb-4,
   .sm\:mb-4 {
-    margin-bottom: 2pt;
+    margin-bottom: 3pt;
   }
 
   .mb-6 {
-    margin-bottom: 5pt;
+    margin-bottom: 6pt;
   }
 
   .mt-2 {
-    margin-top: 1.5pt;
+    margin-top: 2.5pt;
   }
 
   .body-copy,
   .leading-relaxed {
-    line-height: 1.28;
+    line-height: 1.3;
   }
 
   .body-copy > :not(:last-child) {
-    margin-block-end: 3pt;
+    margin-block-end: 3.5pt;
   }
 
   .space-y-2 > :not(:last-child) {
-    margin-block-end: 1pt;
+    margin-block-end: 1.5pt;
   }
 
   #skills,
