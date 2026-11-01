@@ -1,0 +1,66 @@
+# Jorge Froilan Gimenez Perez
+
+> Software Engineer at Apple. Personal CV for Jorge Froilan Gimenez Perez, a systems-oriented software engineer based in Madrid, Spain. Canonical site: https://gimenezp.dev
+
+Jorge Froilan Gimenez Perez is a 27-year-old Software Engineer focused on backend and AI at Apple. He is based in Madrid, Spain, and previously spent around 5 years working in Seoul, South Korea. He holds Spanish nationality and a Korean F6 visa (no sponsorship required).
+
+- Email: jorge@gimenezp.dev
+- LinkedIn: https://www.linkedin.com/in/jfgp
+- CV PDF: https://gimenezp.dev/assets/JorgeFroilanGimenezPerez_CV.pdf
+
+He designs and builds production systems end to end, from architecture through delivery, with backend services and infrastructure at the center. Over more than 7 years that has included distributed systems, data pipelines, Kubernetes and cloud platforms, and AI in production: internal AI agents and MCP tooling, knowledge bases and retrieval systems (RAG) sold to thousands of companies in South Korea, generative AI systems, and an LLM chatbot.
+
+## Site
+
+- [Home](https://gimenezp.dev/): single-page CV
+- [CV PDF](https://gimenezp.dev/assets/JorgeFroilanGimenezPerez_CV.pdf): downloadable resume
+- [llms.txt](https://gimenezp.dev/llms.txt): this file
+- [robots.txt](https://gimenezp.dev/robots.txt)
+- [sitemap.xml](https://gimenezp.dev/sitemap.xml)
+
+## Sections
+
+- [Contact, location, residence](https://gimenezp.dev/#general): jorge@gimenezp.dev; Madrid, Spain; Spanish nationality; Korean F6 visa (no sponsorship required)
+- [About](https://gimenezp.dev/#aboutme): short biography
+- [Skills](https://gimenezp.dev/#skills): backend, cloud, data, AI, languages, and frontend
+- [Currently learning](https://gimenezp.dev/#currently-learning): screen-only section, omitted from print
+- [Work experience](https://gimenezp.dev/#work-experience): roles listed below
+- [Academic background](https://gimenezp.dev/#academic-background): Korea University exchange and UAB computer engineering
+- [Language skills](https://gimenezp.dev/#language-skills): Spanish, English, and Korean
+
+## Currently learning
+
+- [Latency](https://www.manning.com/books/latency) by Pekka Enberg
+- [Systems Performance: Enterprise and the Cloud, 2nd Edition](https://www.brendangregg.com/systems-performance-2nd-edition-book.html) by Brendan Gregg
+- [Computer, Enhance!](https://www.computerenhance.com) by Casey Muratori
+
+## Work experience
+
+- Software Engineer at Apple — November 2025 to present — Madrid, Spain. Architected data analysis applications and high-throughput distributed data pipelines for executive decision-making on large-scale datasets. Designed and deployed internal AI agents and MCP tooling into cross-team operational workflows. Improved the software infrastructure behind those systems, and with it the processing efficiency and performance of core applications. Stack: Python, TypeScript, Go, Rust, MCP, SvelteKit, Docker, Kubernetes, PostgreSQL. https://gimenezp.dev/#work-experience-apple
+- Senior Fullstack Software Engineer, Generative AI Team at PwC — September 2023 to November 2025 — Seoul, South Korea. Designed and built production knowledge bases and retrieval systems (RAG) sold to thousands of companies in South Korea, using Python, TypeScript, Go, C/C++, React, Svelte/SvelteKit, gRPC, RabbitMQ, NATS, PostgreSQL, Azure, Docker, and Kubernetes. https://gimenezp.dev/#work-experience-pwc
+- Cloud Native Developer at Hospital Clínic de Barcelona — September 2020 to November 2025 — Barcelona, Spain and remote. Led design and delivery of clinical applications used by hundreds of medical professionals, including secure backends for sensitive patient data with custom encryption, anonymization, and authentication. Stack: Python, Go, React, Svelte, Next.js, SvelteKit, Kafka, Apache Iceberg, Terraform, AWS. https://gimenezp.dev/#work-experience-clinic
+- 3D Web Apps Engineer and Backend Engineer at Funnyworks — April 2023 to September 2023 — Seoul, South Korea. Web3 integrations, WebGL interfaces, multiplayer game systems, and a production LLM chatbot on Discord. Stack: TypeScript, Go, React, Three.js, React Three Fiber, AWS. https://gimenezp.dev/#work-experience-funnyworks
+- Fullstack Engineer and Engineering Team Leader at Onoma AI — April 2022 to April 2023 — Seoul, South Korea. Directed an engineering team building AI-powered design tools on serverless infrastructure and generative models, including vector databases and API pipelines. Stack: TypeScript, Go, gRPC, Next.js, React, SQL, AWS. https://gimenezp.dev/#work-experience-onoma
+- Fullstack Software Engineer at ASDT Systems EU — January 2020 to January 2023 — Manresa, Spain and remote. Architected a scalable real-time drone detection and neutralization web platform with optimized data models and WebSocket servers, and moved legacy applications onto web architectures. Stack: TypeScript, Node.js, React, MongoDB, Go. https://gimenezp.dev/#work-experience-asdt
+- R&D Solutions Engineer at The Forest Next — January 2019 to January 2020 — Terrassa, Spain. Machine learning for anomaly detection and predictive maintenance on automotive production lines, collaborative robotics (Universal Robots), and a mobile workforce management application. Stack: Python, Matlab, Flutter, SQL. https://gimenezp.dev/#work-experience-theforest
+- Junior Data Analyst at PocketBI Cloud — January 2018 to January 2019 — Barcelona, Spain. Enterprise dashboards in Tableau, Qlik, and PowerBI, plus Python ETL from SQL, NoSQL, and raw sources. Stack: SQL, Python, PowerBI, Tableau. https://gimenezp.dev/#work-experience-pocketbi
+
+## Academic background
+
+- Exchange student, Bachelor's in Computer Science, 고려대학교 (Korea University), Seoul, South Korea — 2021–2022. Two semesters, focused on AI for natural language processing, machine learning applied to graphs, and 3D graphics. https://gimenezp.dev/#academic-ku
+- Bachelor's Degree in Computer Engineering, Universitat Autònoma de Barcelona, Bellaterra, Spain — 2018–2021. 240 ECTS (4-year program), specialization in Computing, with focus on algorithms, performance, operating systems, computer architecture, AI, and scientific computation. Final project: a neural hash system to detect manipulated images. https://gimenezp.dev/#academic-uab
+
+## Skills
+
+- Backend and messaging: gRPC, Kafka, RabbitMQ, NATS, WebSockets, Node.js
+- Cloud and infra: AWS (including serverless), Azure, Docker, Kubernetes, Terraform
+- Data: PostgreSQL, SQL, MongoDB, Apache Iceberg, ETL/data pipelines, vector databases
+- AI systems: RAG / retrieval systems, knowledge bases, AI agents, MCP, LLM applications
+- Languages: Python, TypeScript, Go, Rust, C/C++
+- Frontend: React, Next.js, Svelte/SvelteKit, Three.js
+
+## Language skills
+
+- Spanish: native speaker
+- English: advanced (IELTS 8.0, C1)
+- Korean: upper intermediate

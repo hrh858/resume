@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import { copyFileSync, existsSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 
-const STATIC_ASSETS = ['CNAME', 'robots.txt', 'sitemap.xml']
+const STATIC_ASSETS = ['CNAME', 'robots.txt', 'sitemap.xml', 'llms.txt']
 
 const copyStaticAssetsPlugin = () => {
   let resolvedOutDir = 'dist'

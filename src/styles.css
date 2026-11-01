@@ -209,10 +209,6 @@
     padding-bottom: 3.25rem;
   }
 
-  .identity-kicker {
-    display: none;
-  }
-
   .marker-square,
   .info-column .eyebrow-title::before {
     content: "";
@@ -236,7 +232,7 @@
 
   .role-org {
     font-weight: 650;
-    color: inherit;
+    color: var(--color-hrh-white);
   }
 
   .identity-links {
@@ -271,16 +267,27 @@
     text-decoration-thickness: 1px;
   }
 
+  /* Decorative external-link mark. Empty content keeps it out of the
+     accessibility tree; the link text is the accessible name. */
   a[href^="https:"]::after,
   a[href^="http:"]::after,
   a[href^="mailto:"]::after {
-    content: "↗";
+    content: "";
     display: inline-block;
+    width: 0.65em;
+    height: 0.65em;
     margin-left: 0.32em;
-    font-size: 0.82em;
-    line-height: 1;
+    vertical-align: 0.08em;
+    background-color: currentColor;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3.5 12.5 12.5 3.5M12.5 3.5H6.25M12.5 3.5V9.75' stroke='%23000' stroke-width='1.35' stroke-linecap='square' stroke-linejoin='miter'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3.5 12.5 12.5 3.5M12.5 3.5H6.25M12.5 3.5V9.75' stroke='%23000' stroke-width='1.35' stroke-linecap='square' stroke-linejoin='miter'/%3E%3C/svg%3E");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
     text-decoration: none;
-    transform: translateY(-0.06em);
   }
 
   :focus-visible {
