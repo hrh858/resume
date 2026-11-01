@@ -18,23 +18,30 @@
             const storageKey = 'theme';
             const prefersDark = () => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+            const applyStored = (theme) => {
+                root.dataset.theme = theme;
+                root.style.colorScheme = theme;
+            };
+
             try {
                 const storedTheme = window.localStorage.getItem(storageKey);
                 if (storedTheme === 'dark' || storedTheme === 'light') {
-                    root.dataset.theme = storedTheme;
+                    applyStored(storedTheme);
                     return;
                 }
             } catch (error) {
                 // localStorage might be unavailable; ignore and fall back to system preference.
             }
 
-            root.dataset.theme = prefersDark() ? 'dark' : 'light';
+            applyStored(prefersDark() ? 'dark' : 'light');
         })();
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-          rel="stylesheet">
+    <style>
+        @media screen {
+            html { background: #ffffff; color-scheme: light; }
+            html[data-theme="dark"] { background: #000000; color-scheme: dark; }
+        }
+    </style>
 
     <script type="application/ld+json">
         {
@@ -65,25 +72,30 @@
             ]
         }
     </script>
-  <script type="module" crossorigin src="/assets/index-dAZqmCdU.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Bt1ja6uS.css">
+  <script type="module" crossorigin src="/assets/index-BQi2j5xk.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DwwlhG-N.css">
 </head>
 
-<body class="bg-hrh-bg font-JetBrainsMono text-hrh-white">
-<div class="mx-auto my-6 max-w-screen-lg w-screen px-4">
-    <div class="flex flex-row items-start justify-between">
-        <h1 class="text-3xl font-bold text-hrh-green">Jorge Froilan Gimenez
-            Perez <span class="no-print">🍊</span></h1>
+<body class="bg-hrh-bg text-hrh-white">
+<header class="site-header no-print">
+    <div class="site-header-inner page-frame mx-auto max-w-screen-lg w-screen px-4">
+        <p class="header-mark" aria-hidden="true">Jorge Froilan Gimenez Perez</p>
         <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle color theme" aria-pressed="false">
-            <span class="inline sm:hidden" aria-hidden="true">🌙</span>
-            <span class="hidden sm:inline" data-theme-toggle-label>🌙 Dark mode</span>
+            <span class="theme-toggle-glyph" aria-hidden="true"></span>
+            <span class="theme-toggle-text" data-theme-toggle-label>Dark mode</span>
         </button>
     </div>
-    <span class="text-hrh-muted font-light">/* 호르헤 */</span>
-    <p class="text-hrh-muted">Software Engineer</p>
-    <div class="mt-2 flex flex-wrap items-center gap-3">
+</header>
+<main class="page-frame mx-auto my-6 max-w-screen-lg w-screen px-4">
+    <h1 class="text-3xl font-bold">Jorge Froilan Gimenez
+        Perez <span class="no-print">🍊</span></h1>
+    <div class="identity">
+    <span class="identity-kicker text-hrh-muted font-light">/* 호르헤 */</span>
+    <p class="identity-role text-hrh-muted">Software Engineer</p>
+    <div class="identity-links mt-2 flex flex-wrap items-center gap-3">
         <a class="underline" href="https://www.linkedin.com/in/jfgp"><span class="no-print">🔗</span>LinkedIn</a>
         <a class="underline" download="JorgeFroilanGimenezPerez_CV.pdf" href="/assets/JorgeFroilanGimenezPerez_CV.pdf"><span class="no-print">📝</span>CV PDF</a>
+    </div>
     </div>
     <section id="general" class="sm:grid sm:grid-cols-3 section-block">
         <div class="info-column">
@@ -92,11 +104,11 @@
                 <a href="mailto:jorge@gimenezp.dev" class="underline">jorge@gimenezp.dev</a>
                 <button
                         type="button"
-                        class="text-xl leading-none transition-transform hover:scale-110 focus:outline-none"
+                        class="copy-email"
                         data-copy-email
                         data-copy-value="jorge@gimenezp.dev"
                         aria-label="Copy email address"
-                >📋</button>
+                ><span data-copy-label>Copy</span></button>
             </div>
         </div>
         <div class="info-column">
@@ -110,6 +122,7 @@
         </div>
     </section>
     <section id="aboutme" class="section-block">
+        <p class="section-index no-print"><span class="marker-square" aria-hidden="true"></span>01 / ABOUT</p>
         <h1 class="eyebrow-title mb-4">About Me</h1>
         <div class="body-copy">
             <p>I'm Jorge — a 27-year-old software engineer. I'm currently a Software Engineer focused on backend and AI at Apple. I'm based in Madrid, Spain<span class="no-print"> 🇪🇸</span>, and previously spent around 5 years working in Seoul, South Korea<span class="no-print"> 🇰🇷</span>.</p>
@@ -120,6 +133,7 @@
         </div>
     </section>
     <section id="skills" class="section-block">
+        <p class="section-index no-print"><span class="marker-square" aria-hidden="true"></span>02 / SKILLS</p>
         <h1 class="eyebrow-title mb-4">Skills</h1>
         <div class="space-y-2 leading-relaxed">
             <p><span class="font-bold text-hrh-light-blue">Backend &amp; messaging:</span> gRPC, Kafka, RabbitMQ, NATS, WebSockets, Node.js</p>
@@ -131,8 +145,9 @@
         </div>
     </section>
     <section id="currently-learning" class="section-block">
+        <p class="section-index no-print"><span class="marker-square" aria-hidden="true"></span>03 / LEARNING</p>
         <h1 class="eyebrow-title">Currently Learning</h1>
-        <h2 class="text-hrh-muted font-light text-sm mb-4">A list of resources that I am learning from in my free time
+        <h2 class="learning-note text-hrh-muted font-light text-sm mb-4">A list of resources that I am learning from in my free time
             at
             the moment</h2>
         <div class="mb-4">
@@ -152,6 +167,7 @@
         </div>
     </section>
     <section id="work-experience" class="section-block">
+        <p class="section-index no-print"><span class="marker-square" aria-hidden="true"></span>04 / EXPERIENCE</p>
         <h1 class="eyebrow-title mb-4">Work Experience</h1>
         <div id="work-experience-apple" class="mb-6">
             <h1 class="entry-title">Software Engineer at
@@ -276,6 +292,7 @@
         </div>
     </section>
     <section id="academic-background" class="section-block">
+        <p class="section-index no-print"><span class="marker-square" aria-hidden="true"></span>05 / EDUCATION</p>
         <h1 class="eyebrow-title mb-4">Academic Background</h1>
         <div id="academic-ku" class="mb-6">
             <h1 class="entry-title">Exchange Student, Bachelor's in Computer Science</h1>
@@ -304,6 +321,7 @@
         </div>
     </section>
     <section id="language-skills" class="py-6">
+        <p class="section-index no-print"><span class="marker-square" aria-hidden="true"></span>06 / LANGUAGES</p>
         <h1 class="eyebrow-title mb-4">Language Skills</h1>
         <div class="grid grid-cols-1 sm:grid-cols-3">
             <div class="mb-4 sm:mb-0">
@@ -320,6 +338,6 @@
             </div>
         </div>
     </section>
-</div>
+</main>
 </body>
 </html>
