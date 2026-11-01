@@ -189,26 +189,24 @@
     gap: 1.25rem;
   }
 
-  .header-mark {
+  h1.header-wordmark {
     margin: 0;
-    color: var(--color-hrh-white);
-    font-family: "IBM Plex Mono", "Hangul Fallback", ui-monospace, monospace;
-    font-size: clamp(0.62rem, 1.5vw, 0.72rem);
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    line-height: 1.4;
-    text-transform: uppercase;
-  }
-
-  h1.text-3xl {
-    max-width: 9.6em;
+    min-width: 0;
     color: var(--color-hrh-white);
     font-family: "Space Grotesk", "Hangul Fallback", Helvetica, Arial, sans-serif;
-    font-size: clamp(2.65rem, 6.4vw, 5.15rem);
-    font-weight: 570;
-    letter-spacing: -0.065em;
-    line-height: 0.92;
+    font-size: clamp(1.15rem, 2vw, 1.7rem);
+    font-weight: 560;
+    letter-spacing: -0.045em;
+    line-height: 1.15;
     text-wrap: balance;
+  }
+
+  .header-ko {
+    white-space: nowrap;
+  }
+
+  .header-emoji {
+    margin-left: 0.35rem;
   }
 
   .identity {
@@ -216,19 +214,9 @@
   }
 
   .identity-kicker {
-    display: flex;
-    align-items: center;
-    gap: 0.55rem;
-    margin-top: 1.35rem;
-    color: var(--color-hrh-faint);
-    font-family: "IBM Plex Mono", "Hangul Fallback", ui-monospace, monospace;
-    font-size: 0.72rem;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    line-height: 1.6;
+    display: none;
   }
 
-  .identity-kicker::before,
   .marker-square,
   .info-column .eyebrow-title::before {
     content: "";
@@ -655,6 +643,11 @@
 }
 
 @media screen and (max-width: 39.99rem) {
+  h1.header-wordmark {
+    font-size: 1.05rem;
+    letter-spacing: -0.04em;
+  }
+
   .theme-toggle {
     width: 44px;
     height: 44px;
