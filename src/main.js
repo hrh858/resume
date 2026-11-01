@@ -22,19 +22,13 @@ const getSystemTheme = () => {
 
 const updateToggleButtons = (theme) => {
   const isDark = theme === "dark";
-  const emoji = isDark ? "☀️" : "🌙";
-  const label = isDark ? "☀️ Light mode" : "🌙 Dark mode";
+  const label = isDark ? "Light mode" : "Dark mode";
   const description = isDark ? "Switch to light color theme" : "Switch to dark color theme";
 
   document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
     button.querySelectorAll("[data-theme-toggle-label]").forEach((node) => {
       node.textContent = label;
     });
-
-    const emojiSpan = button.querySelector("span[aria-hidden='true']");
-    if (emojiSpan) {
-      emojiSpan.textContent = emoji;
-    }
 
     button.setAttribute("aria-pressed", String(isDark));
     button.setAttribute("aria-label", description);
@@ -45,6 +39,7 @@ const updateToggleButtons = (theme) => {
 const applyTheme = (theme, { persist = true } = {}) => {
   const nextTheme = VALID_THEMES.has(theme) ? theme : "light";
   root.dataset.theme = nextTheme;
+  root.style.colorScheme = nextTheme;
 
   if (persist) {
     try {
@@ -98,12 +93,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = button.getAttribute("data-copy-value");
     if (!email) return;
 
-    const defaultIcon = button.textContent;
+    const label = button.querySelector("[data-copy-label]");
+    const defaultText = label ? label.textContent : button.textContent;
 
-    const showFeedback = (icon) => {
-      button.textContent = icon;
+    const showFeedback = (text) => {
+      if (label) label.textContent = text;
+      else button.textContent = text;
       setTimeout(() => {
-        button.textContent = defaultIcon;
+        if (label) label.textContent = defaultText;
+        else button.textContent = defaultText;
       }, 1500);
     };
 
@@ -122,10 +120,10 @@ document.addEventListener("DOMContentLoaded", () => {
           document.execCommand("copy");
           document.body.removeChild(temp);
         }
-        showFeedback("✅");
+        showFeedback("Copied");
       } catch (error) {
         console.error("Failed to copy email", error);
-        showFeedback("⚠️");
+        showFeedback("Retry");
       }
     });
   });
