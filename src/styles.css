@@ -201,12 +201,8 @@
     text-wrap: balance;
   }
 
-  .header-ko {
-    white-space: nowrap;
-  }
-
   .header-emoji {
-    margin-left: 0.35rem;
+    margin-left: 0.4rem;
   }
 
   .identity {
@@ -228,7 +224,7 @@
   }
 
   .identity-role {
-    max-width: 18ch;
+    max-width: 24rem;
     margin-top: 0.85rem;
     color: var(--color-hrh-muted);
     font-family: "Space Grotesk", "Hangul Fallback", Helvetica, Arial, sans-serif;
@@ -236,6 +232,11 @@
     font-weight: 530;
     letter-spacing: -0.045em;
     line-height: 1.05;
+  }
+
+  .role-org {
+    font-weight: 650;
+    color: inherit;
   }
 
   .identity-links {
@@ -643,11 +644,6 @@
 }
 
 @media screen and (max-width: 39.99rem) {
-  h1.header-wordmark {
-    font-size: 1.05rem;
-    letter-spacing: -0.04em;
-  }
-
   .theme-toggle {
     width: 44px;
     height: 44px;
