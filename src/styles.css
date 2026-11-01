@@ -650,8 +650,21 @@
   }
 
   .copy-email {
-    min-height: 44px;
-    padding-inline: 0.7rem;
+    position: relative;
+    min-height: 0;
+    padding: 0.16rem 0.4rem;
+    font-size: 0.6rem;
+    line-height: 1.35;
+  }
+
+  .copy-email::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    right: -8px;
+    top: 50%;
+    height: 44px;
+    transform: translateY(-50%);
   }
 
   .identity-links {
