@@ -654,6 +654,38 @@
   }
 }
 
+@media screen and (max-width: 39.99rem) {
+  .theme-toggle {
+    width: 44px;
+    height: 44px;
+  }
+
+  .copy-email {
+    min-height: 44px;
+    padding-inline: 0.7rem;
+  }
+
+  .identity-links {
+    gap: 0.15rem 1.35rem;
+  }
+
+  .identity-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    border-bottom: 0;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+  }
+
+  .info-column .flex > a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
 @media print {
   @font-face {
     font-family: "CV Serif";
