@@ -50,7 +50,11 @@
   --font-display: "Space Grotesk", "Hangul Fallback", Helvetica, Arial, sans-serif;
   --font-JetBrainsMono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  --color-hrh-bg: #ffffff;
+  /* Screen page, from zed.dev/blog/gpui-ownership.
+     Light is cream-100 #d1cfc8 at 20% over white in oklab = #f6f5f4
+     (bg-cream-100/20; cream-50 #f5f4f3 is a step darker).
+     Code words use accent-blue #1348dc. Print keeps its own navy on white. */
+  --color-hrh-bg: #f6f5f4;
   --color-hrh-dark-blue: #000000;
   --color-hrh-light-blue: #000000;
   --color-hrh-white: #000000;
@@ -58,14 +62,21 @@
   --color-hrh-green: #000000;
   --color-hrh-red: #000000;
   --color-hrh-faint: #74787c;
-  --color-hrh-panel: #ececea;
-  --color-hrh-rule: #383b3e;
-  --color-hrh-hairline: #a9adb2;
+  --color-hrh-hairline: #aaa598;
+  --color-hrh-code: #1348dc;
+}
+
+/* static: panel and rule are not referenced by a utility, so a normal
+   @theme block would drop them from the built CSS. */
+@theme static {
+  --color-hrh-panel: #e4e2df;
+  --color-hrh-rule: #37352f;
 }
 
 @layer base {
   :root[data-theme="dark"] {
-    --color-hrh-bg: #000000;
+    /* hsl(218 13% 7.5%) from the post's dark:bg-[hsl(218,_13%,_7.5%)]. */
+    --color-hrh-bg: #111216;
     --color-hrh-dark-blue: #ffffff;
     --color-hrh-light-blue: #ffffff;
     --color-hrh-white: #ffffff;
@@ -73,9 +84,11 @@
     --color-hrh-green: #ffffff;
     --color-hrh-red: #ffffff;
     --color-hrh-faint: #989ca0;
-    --color-hrh-panel: #20201f;
-    --color-hrh-rule: #d6d9dc;
-    --color-hrh-hairline: #696d70;
+    --color-hrh-panel: #28292d;
+    --color-hrh-rule: #e3e5ea;
+    --color-hrh-hairline: #73757a;
+    /* Zed --color-blue-300, the post's dark:text-blue-300. */
+    --color-hrh-code: #90c5ff;
   }
 }
 
@@ -468,7 +481,7 @@
   }
 
   #skills p > span {
-    color: var(--color-hrh-faint);
+    color: var(--color-hrh-code);
     font-family: "IBM Plex Mono", "Hangul Fallback", ui-monospace, monospace;
     font-size: 0.72rem;
     font-weight: 500;
@@ -589,7 +602,7 @@
   }
 
   .tech-stack > li {
-    color: var(--color-hrh-faint);
+    color: var(--color-hrh-code);
     font-family: "IBM Plex Mono", "Hangul Fallback", ui-monospace, monospace;
     font-size: 0.7rem;
     font-weight: 400;
