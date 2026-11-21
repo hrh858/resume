@@ -22,7 +22,7 @@ He designs and builds production systems end to end, from architecture through d
 
 - [Contact, location, residence](https://gimenezp.dev/#general): jorge@gimenezp.dev; Madrid, Spain; Spanish nationality; Korean F6 visa (no sponsorship required)
 - [About](https://gimenezp.dev/#aboutme): short biography
-- [Skills](https://gimenezp.dev/#skills): backend, cloud, data, AI, languages, and frontend
+- [Skills](https://gimenezp.dev/#skills): languages, backend and APIs, databases and caching, messaging, cloud, containers, observability, CI/CD, AI systems, and frontend
 - [Currently learning](https://gimenezp.dev/#currently-learning): screen-only section, omitted from print
 - [Work experience](https://gimenezp.dev/#work-experience): roles listed below
 - [Academic background](https://gimenezp.dev/#academic-background): Korea University exchange and UAB computer engineering
@@ -36,14 +36,14 @@ He designs and builds production systems end to end, from architecture through d
 
 ## Work experience
 
-- Software Engineer at Apple — November 2025 to present — Madrid, Spain. Architected data analysis applications and high-throughput distributed data pipelines for executive decision-making on large-scale datasets. Designed and deployed internal AI agents and MCP tooling into cross-team operational workflows. Improved the software infrastructure behind those systems, and with it the processing efficiency and performance of core applications. Stack: Python, TypeScript, Go, Rust, MCP, SvelteKit, Docker, Kubernetes, PostgreSQL. https://gimenezp.dev/#work-experience-apple
-- Senior Fullstack Software Engineer, Generative AI Team at PwC — September 2023 to November 2025 — Seoul, South Korea. Designed and built production knowledge bases and retrieval systems (RAG) sold to thousands of companies in South Korea, using Python, TypeScript, Go, C/C++, React, Svelte/SvelteKit, gRPC, RabbitMQ, NATS, PostgreSQL, Azure, Docker, and Kubernetes. https://gimenezp.dev/#work-experience-pwc
-- Cloud Native Developer at Hospital Clínic de Barcelona — September 2020 to November 2025 — Barcelona, Spain and remote. Led design and delivery of clinical applications used by hundreds of medical professionals, including secure backends for sensitive patient data with custom encryption, anonymization, and authentication. Stack: Python, Go, React, Svelte, Next.js, SvelteKit, Kafka, Apache Iceberg, Terraform, AWS. https://gimenezp.dev/#work-experience-clinic
-- 3D Web Apps Engineer and Backend Engineer at Funnyworks — April 2023 to September 2023 — Seoul, South Korea. Web3 integrations, WebGL interfaces, multiplayer game systems, and a production LLM chatbot on Discord. Stack: TypeScript, Go, React, Three.js, React Three Fiber, AWS. https://gimenezp.dev/#work-experience-funnyworks
-- Fullstack Engineer and Engineering Team Leader at Onoma AI — April 2022 to April 2023 — Seoul, South Korea. Directed an engineering team building AI-powered design tools on serverless infrastructure and generative models, including vector databases and API pipelines. Stack: TypeScript, Go, gRPC, Next.js, React, SQL, AWS. https://gimenezp.dev/#work-experience-onoma
-- Fullstack Software Engineer at ASDT Systems EU — January 2020 to January 2023 — Manresa, Spain and remote. Architected a scalable real-time drone detection and neutralization web platform with optimized data models and WebSocket servers, and moved legacy applications onto web architectures. Stack: TypeScript, Node.js, React, MongoDB, Go. https://gimenezp.dev/#work-experience-asdt
-- R&D Solutions Engineer at The Forest Next — January 2019 to January 2020 — Terrassa, Spain. Machine learning for anomaly detection and predictive maintenance on automotive production lines, collaborative robotics (Universal Robots), and a mobile workforce management application. Stack: Python, Matlab, Flutter, SQL. https://gimenezp.dev/#work-experience-theforest
-- Junior Data Analyst at PocketBI Cloud — January 2018 to January 2019 — Barcelona, Spain. Enterprise dashboards in Tableau, Qlik, and PowerBI, plus Python ETL from SQL, NoSQL, and raw sources. Stack: SQL, Python, PowerBI, Tableau. https://gimenezp.dev/#work-experience-pocketbi
+- Software Engineer at Apple — November 2025 to present — Madrid, Spain. Architected data analysis applications and high-throughput distributed data pipelines in Go, Python, TypeScript, and Rust, with PostgreSQL and Redis caching, for executive decision-making on large-scale datasets. Designed and deployed internal AI agents and MCP tooling into cross-team operational workflows. Owned the software infrastructure behind those systems with Docker, Kubernetes, and OpenTelemetry, and shipped them with Jenkins, improving processing efficiency and performance of core applications. Stack: Go, Python, TypeScript, Rust, PostgreSQL, Redis, Docker, Kubernetes, OpenTelemetry, Jenkins, MCP, SvelteKit. https://gimenezp.dev/#work-experience-apple
+- Senior Fullstack Software Engineer, Generative AI Team at PwC — September 2023 to November 2025 — Seoul, South Korea. Designed and built production knowledge bases and retrieval systems (RAG) in Python, TypeScript, Go, and C/C++, with React and Svelte/SvelteKit clients; these products were, and still are, sold to thousands of companies in South Korea. Architected the backends with gRPC on Azure, PostgreSQL and Redis caching, and messaging through RabbitMQ and NATS. Containerized services with Docker and deployed the images to Kubernetes. Owned infrastructure as code with Terraform and CI/CD with GitHub Actions. Stack: Go, Python, TypeScript, C/C++, gRPC, PostgreSQL, Redis, RabbitMQ, NATS, Azure, Docker, Kubernetes, Terraform, GitHub Actions, React, Svelte, SvelteKit. https://gimenezp.dev/#work-experience-pwc
+- Cloud Native Developer at Hospital Clínic de Barcelona — September 2020 to November 2025 — Barcelona, Spain and remote. Led design and delivery of clinical applications used by hundreds of medical professionals, in Python and Go, including the database models and React, Svelte, Next.js, and SvelteKit clients. Architected secure backends for sensitive patient data, with custom encryption, anonymization, and authentication protocols. Deployed the supporting systems on AWS with Kafka, Apache Iceberg, and Redis caching, and owned Terraform and GitHub Actions CI/CD. Stack: Go, Python, Kafka, Apache Iceberg, Redis, AWS, Terraform, GitHub Actions, React, Next.js, Svelte, SvelteKit. https://gimenezp.dev/#work-experience-clinic
+- 3D Web Apps Engineer and Backend Engineer at Funnyworks — April 2023 to September 2023 — Seoul, South Korea. Designed and deployed Web3 integrations and multiplayer game systems in TypeScript and Go for high-traffic corporate partnerships, on AWS with Redis caching. Designed and deployed WebGL interfaces with React, Three.js, and React Three Fiber. Architected and deployed a production LLM chatbot on Discord for a large-scale user community. Stack: Go, TypeScript, Redis, AWS, React, Three.js, React Three Fiber. https://gimenezp.dev/#work-experience-funnyworks
+- Fullstack Engineer and Engineering Team Leader at Onoma AI — April 2022 to April 2023 — Seoul, South Korea. Directed an engineering team to architect and scale AI-powered design tools in TypeScript and Go on AWS serverless infrastructure and generative models. Designed the system architecture and deployed the gRPC API pipelines those AI services ran on, integrating SQL, vector databases, and Redis caching. Owned OpenTelemetry telemetry and GitHub Actions CI/CD, and shipped the Next.js and React clients. Stack: Go, TypeScript, gRPC, SQL, Redis, vector databases, AWS, OpenTelemetry, GitHub Actions, Next.js, React. https://gimenezp.dev/#work-experience-onoma
+- Fullstack Software Engineer at ASDT Systems EU — January 2020 to January 2023 — Manresa, Spain and remote. Architected and deployed a highly scalable, real-time drone detection and neutralization web platform in TypeScript, Node.js, and Go, with a React client. Designed optimized data models and WebSocket servers, with MongoDB and Redis caching. Engineered the transition from legacy applications to web-based architectures and owned GitHub Actions CI/CD, facilitating adoption by enterprise and government clients. Stack: Go, TypeScript, Node.js, MongoDB, Redis, GitHub Actions, React. https://gimenezp.dev/#work-experience-asdt
+- R&D Solutions Engineer at The Forest Next — January 2019 to January 2020 — Terrassa, Spain. Developed and deployed machine learning models in Python and Matlab, with SQL, for anomaly detection and predictive maintenance in automotive production lines. Programmed collaborative robotics (Universal Robots) and built a Flutter mobile workforce management application. Stack: Python, SQL, Matlab, Flutter. https://gimenezp.dev/#work-experience-theforest
+- Junior Data Analyst at PocketBI Cloud — January 2018 to January 2019 — Barcelona, Spain. Built enterprise data visualization dashboards in Tableau, Qlik, and PowerBI for multinational clients. Engineered custom Python scripts and ETL pipelines to extract, transform, and aggregate data from SQL, NoSQL, and raw data sources. Stack: Python, SQL, PowerBI, Tableau, Qlik. https://gimenezp.dev/#work-experience-pocketbi
 
 ## Academic background
 
@@ -52,11 +52,15 @@ He designs and builds production systems end to end, from architecture through d
 
 ## Skills
 
-- Backend and messaging: gRPC, Kafka, RabbitMQ, NATS, WebSockets, Node.js
-- Cloud and infra: AWS (including serverless), Azure, Docker, Kubernetes, Terraform
-- Data: PostgreSQL, SQL, MongoDB, Apache Iceberg, ETL/data pipelines, vector databases
+- Languages: Go, Python, TypeScript, Rust, C/C++
+- Backend and APIs: REST, gRPC, WebSockets, Node.js
+- Databases and caching: PostgreSQL, Redis, MongoDB, Apache Iceberg, SQL, vector databases, ETL/data pipelines
+- Messaging and streaming: Kafka, RabbitMQ, NATS
+- Cloud: AWS (including serverless), Azure
+- Containers and IaC: Docker, Kubernetes, Terraform
+- Observability: OpenTelemetry
+- CI/CD: GitHub Actions, Jenkins
 - AI systems: RAG / retrieval systems, knowledge bases, AI agents, MCP, LLM applications
-- Languages: Python, TypeScript, Go, Rust, C/C++
 - Frontend: React, Next.js, Svelte/SvelteKit, Three.js
 
 ## Language skills

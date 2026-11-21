@@ -560,6 +560,7 @@
   }
 
   #work-experience .leading-relaxed,
+  #work-experience .role-points,
   #academic-background ul {
     max-width: none;
     margin-top: 0.85rem;
@@ -715,6 +716,7 @@
   .body-copy,
   #skills p,
   #work-experience .leading-relaxed,
+  #work-experience .role-points,
   #academic-background ul,
   #currently-learning > h2.learning-note {
     font-size: 1.0625rem;
@@ -741,6 +743,7 @@
   .body-copy,
   #skills p,
   #work-experience .leading-relaxed,
+  #work-experience .role-points,
   #academic-background ul,
   #currently-learning > h2.learning-note {
     font-size: 1.125rem;
@@ -946,6 +949,31 @@
     color: #8b9096;
   }
 
+  #work-experience .role-points {
+    margin-top: 2pt;
+    margin-bottom: 0;
+    padding-left: 1.15em;
+    list-style: disc outside;
+  }
+
+  #work-experience .role-points > li {
+    padding-left: 0.15em;
+    line-height: 1.32;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  #work-experience .role-points > li + li {
+    margin-top: 1pt;
+  }
+
+  #work-experience .entry-title,
+  #work-experience .entry-meta,
+  #academic-background .entry-title {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
   .text-xl {
     font-size: 12pt;
   }
@@ -958,8 +986,8 @@
 
   .section-block,
   .py-6 {
-    padding-top: 6.25pt;
-    padding-bottom: 5.5pt;
+    padding-top: 5.25pt;
+    padding-bottom: 4.5pt;
   }
 
   .mb-4,
@@ -968,7 +996,11 @@
   }
 
   .mb-6 {
-    margin-bottom: 8pt;
+    margin-bottom: 5pt;
+  }
+
+  #general .info-column .text-hrh-muted {
+    display: block;
   }
 
   .mt-2 {
@@ -1015,10 +1047,11 @@
     color: #1f3a5f;
   }
 
-  #skills,
   #language-skills,
+  #academic-background,
   #work-experience > div,
-  #academic-background > div {
+  #academic-background > div,
+  #skills p {
     break-inside: avoid;
     page-break-inside: avoid;
   }
